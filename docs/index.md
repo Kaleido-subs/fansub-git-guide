@@ -1,53 +1,73 @@
-# Welcome to MkDocs
+# The Kaleido Fansubbing Management Guide
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This guide aims to provide
+a comprehensive introduction
+to many useful aspects
+of modern-day fansubbing.
+It is designed to help both
+new and experienced fansubbers
+leverage best-practices,
+how to create a project,
+basic management tooling and skills,
+and so on.
 
-## Commands
+## Who Should Use This Guide?
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+This guide is intended
+for anyone involved in fansubbing,
+including translators,
+timers,
+typesetters,
+editors,
+song stylers,
+and quality checkers.
+Whether you are new
+or looking to improve
+your existing workflow,
+this guide will provide
+the knowledge and tools
+you need to manage
+your fansubbing projects effectively.
 
-## Project layout
+!!! Warning
+    This guide is **NOT** a guide on how to fansub,
+    but on how to manage and run a project!
+    There are many other resources online
+    to learn basics for translation, typesetting, encoding, etc.
+    so please refer to those instead!
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Topics
 
+This guide touches upon
+the following topics:
 
-## Codeblock
+    1. Git
+        1. Setup
+            - Installing the Github Desktop client and other useful tooling
+            - Creating and configuring Github repositories
+            - Cloning a Github repository
 
-```py
-from NKCommon import *
+        2. Usage
+            - Committing, pulling/pushing, changing branches, etc.
+            - Pull requests and branching
+            - Resolving merge conflicts
+            - Keeping your repository clean
 
-no_filter = []
-credit = []
+    2. ASS files
+        1. Setup
+            - Installing the latest Aegisub version
+            - Splitting up files
+            - Configuration
 
+    3. Discord integration
+        1. Webhooks
+            - Github
 
-AMZN = FileInfo(GlobSearch(f"Ninja*S01E{ep}*AMZN CBR*.mkv"), trim=(96, None))
-HMAX = FileInfo(GlobSearch(f"Ninja*S01E{ep}*.HMAX*VARYG*.mkv"), force_bs=True)
-src: vs.VideoNode = HMAX.init().std.AssumeFPS(fpsnum=24000, fpsden=1001)[98:]
-```
+        2. Nino
+            - Setup and further configuration
+            - Linking a project channel with a public channel
 
-## Tabs
-
-=== "Tab 1"
-    Markdown **content**.
-
-    Multiple paragraphs.
-
-=== "Tab 2"
-    More Markdown **content**.
-
-    - list item a
-    - list item b
-
-## File embed sample
-
-Also see [this documentation](https://facelessuser.github.io/pymdown-extensions/extensions/snippets/) on more features related to this.
-
-```py title="test.py"
---8<-- "./docs/code/test.py"
-```
+    4. Staff
+        1. Recruitment
+            - Recruitment channels and forums
+            - Testing applicants
