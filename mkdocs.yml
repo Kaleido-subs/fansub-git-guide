@@ -1,8 +1,8 @@
-site_name: VS Mkdocs Template
-site_description: wowie
-site_author: wowie
+site_name: Kaleido Fansubbing Management Guide
+site_description: A guide to creating and managing fansubbing projects.
+site_author: LightArrowsEXE
 site_url: https://example.com
-repo_url: https://github.com/Vodes/Mkdocs-VS-Template
+repo_url: https://github.com/Kaleido-subs/fansub-git-guide
 
 theme:
   name: material
@@ -14,6 +14,7 @@ theme:
   features:
     - content.code.copy
     - content.code.select
+    - navigation.expand
 
 nav:
   - Home: index.md
@@ -31,6 +32,7 @@ plugins:
           show_symbol_type_toc: true
 
 markdown_extensions:
+  - admonition
   - footnotes
   - tables
   - pymdownx.tabbed:
