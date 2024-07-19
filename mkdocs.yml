@@ -18,6 +18,9 @@ theme:
 
 nav:
   - Home: index.md
+  - Project Repostiory:
+    - Git:
+      - Project Repository Setup: git/setup.md
 
 plugins:
 - search
